@@ -1,6 +1,6 @@
-# My Projects
+# Flutter Projects
 
-**My Projects** is a Flutter app that fetches and displays a list of projects from a JSON API. This app showcases project details including the language used, Git repository links, and project completion status.
+**Flutter Projects** is a Flutter app that fetches and displays a list of projects from a JSON API. This app showcases project details including the language used, Git repository links, and project completion status.
 
 ## Features
 
@@ -47,7 +47,17 @@ https://getpantry.cloud/apiv1/pantry/d13d90f6-9c51-487c-9ebb-8b788917748d/basket
 ```
 
 You can modify the URL in the `lib/main.dart` file if you want to use a different API endpoint.
+And the json format is:
+The JSON data is organized as follows:
 
+```json
+{
+  "Project Name": {
+    "Language": "Programming Language(s) used",
+    "Git Address": "URL to the project's Git repository",
+    "Finished?": "Status of project completion"
+  }
+}
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions, please open an issue or submit a pull request.
