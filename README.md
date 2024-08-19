@@ -58,6 +58,7 @@ The JSON data is organized as follows:
     "Finished?": "Status of project completion"
   }
 }
+```
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions, please open an issue or submit a pull request.
