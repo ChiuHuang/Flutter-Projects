@@ -4,13 +4,13 @@ import 'package:MyProjectsFlutter/main.dart'; // Update this with your app's imp
 void main() {
   testWidgets('App builds and shows title', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyProjectsApp());
+    await tester.pumpWidget(const MyProjectsFlutter());
 
     // Wait for the widget tree to settle.
     await tester.pumpAndSettle();
 
     // Verify that the app displays a title or some key widget.
-    expect(find.text('Project List'), findsOneWidget);
+    expect(find.text("Codefoxy's Projects"), findsOneWidget);
     // You can add more checks based on your app's UI
   });
 }
