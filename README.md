@@ -17,25 +17,25 @@ To run the Projects Loader app locally, follow these steps:
 - [Flutter](https://flutter.dev/docs/get-started/install) installed on your machine.
 - [Dart](https://dart.dev/get-dart) (comes with Flutter SDK).
 
-### Setup
+### Setup(Linux)
 
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/projects_loader.git
-   cd projects_loader
+   git clone https://github.com/CodeFoxy-Github/Flutter-Projects
+   cd Flutter-Projects
    ```
 
 2. **Install dependencies:**
 
    ```sh
-   flutter pub get
+   if cd flutter; then git pull && cd .. ; else git clone https://github.com/flutter/flutter.git; fi && ls && flutter/bin/flutter doctor && flutter/bin/flutter clean && flutter/bin/flutter config --enable-web
    ```
 
 3. **Run the app:**
 
    ```sh
-   flutter run
+   flutter/bin/flutter build web --release
    ```
 
 ## Configuration
