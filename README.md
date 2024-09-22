@@ -43,9 +43,10 @@ To run the Projects Loader app locally, follow these steps:
 The app fetches project data from the following URL:
 
 ```plaintext
-https://raw.githubusercontent.com/CodeFoxy-Github/Flutter-Projects/main/projects.json
+https://getpantry.cloud/apiv1/pantry/d13d90f6-9c51-487c-9ebb-8b788917748d/basket/Projects
 ```
-
+getpantry.cloud!
+**(tho its slow asf)**
 You can modify the URL in the `lib/main.dart` file if you want to use a different API endpoint.
 And the json format is:
 The JSON data is organized as follows:
