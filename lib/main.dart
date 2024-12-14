@@ -41,7 +41,7 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
 
   Future<Map<String, dynamic>> fetchProjects() async {
     final response = await http.get(Uri.parse(
-        'https://raw.githubusercontent.com/CodeFoxy-Github/Flutter-Projects/refs/heads/main/projects.json'));
+        'https://getpantry.cloud/apiv1/pantry/dd9b1690-a702-4a1f-908a-9fb8d77614aa/basket/patha'));
         // get pantry!  https://getpantry.cloud
     if (response.statusCode == 200) {
       return json.decode(response.body);
