@@ -38,7 +38,7 @@
    flutter/bin/flutter build web --release
    ```
 
-## 設定檔
+## 設定
 
 該應用程式會從以下 URL 抓取專案資料：
 <br>
