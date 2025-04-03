@@ -13,7 +13,7 @@ class MyProjectsFlutter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Projects',
+      title: '我的作品清單',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
         useMaterial3: true,
@@ -42,11 +42,10 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
   Future<Map<String, dynamic>> fetchProjects() async {
     final response = await http.get(Uri.parse(
         'https://getpantry.cloud/apiv1/pantry/dd9b1690-a702-4a1f-908a-9fb8d77614aa/basket/patha'));
-        // get pantry!  https://getpantry.cloud
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {
-      throw Exception('Failed to load projects');
+      throw Exception('列表載入失敗');
     }
   }
 
@@ -54,7 +53,7 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Project List'),
+        title: const Text('作品清單'),
       ),
       body: Column(
         children: [
@@ -87,18 +86,18 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
                               fontSize: 18.0, fontWeight: FontWeight.bold),
                         ),
                         subtitle: Text(
-                            'Language: ${project['Language'] ?? 'Unknown'}'),
+                            '程式語言: ${project['Language'] ?? '未知'}'),
                         isThreeLine: true,
                         trailing: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('Finished: ${project['Finished?'] ?? 'Unknown'}'),
+                            Text('進度: ${project['Progress'] ?? '未知'}'),
                             const SizedBox(height: 8.0),
                             project['Git Address'] != null
                                 ? TextButton(
                                     onPressed: () =>
                                         _launchURL(project['Git Address']),
-                                    child: const Text('View on GitHub',
+                                    child: const Text('在 Github 開啟',
                                         style: TextStyle(color: Colors.blue)),
                                   )
                                 : const Text('No Git Address'),
