@@ -1,16 +1,16 @@
-# Flutter 專案
+# Flutter 作品列表
 
-**Flutter 專案** 是一個 Flutter 應用程式，會從 JSON API 抓取並顯示專案列表。此應用程式展示專案的詳細資訊，包括使用的程式語言、Git 儲存庫連結以及專案完成狀態。
+**Flutter 作品列表** 是一個 Flutter 應用程式，會從 JSON API 抓取並顯示作品列表。此應用程式展示專案的詳細資訊，包括使用的程式語言、Git 儲存庫連結以及專案完成狀態。
 
 ## 功能
 
-- 從遠端 JSON API 抓取專案資料。
-- 在響應式且使用者友善的介面中顯示專案資訊。
-- 每個專案卡片都包含專案名稱、語言、Git 地址以及完成狀態。
+- 從遠端 JSON API 抓取作品資料。
+- 在響應式且使用者友善的介面中顯示作品資訊。
+- 每個專案卡片都包含作品名稱、語言、Git 地址以及進度。
 
 ## 安裝
 
-要在本地端執行 Projects Loader 應用程式，請依照下列步驟操作：
+要在本地端執行應用程式，請依照下列步驟操作：
 
 ### 前置需求
 
@@ -22,7 +22,7 @@
 1. **複製儲存庫：**
 
    ```sh
-   git clone https://github.com/CodeFoxy-Github/Flutter-Projects
+   git clone https://github.com/ChQiuHuang/Flutter-Projects
    cd Flutter-Projects
    ```
 
@@ -53,7 +53,7 @@ JSON 資料的結構如下所示：
   "Project Name": {
     "Language": "使用的程式語言",
     "Git Address": "專案 Git 儲存庫的 URL",
-    "Progress": "專案完成狀態"
+    "Progress": "進度"
   }
 }
 ```
