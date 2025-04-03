@@ -53,7 +53,7 @@ JSON 資料的結構如下所示：
   "Project Name": {
     "Language": "使用的程式語言",
     "Git Address": "專案 Git 儲存庫的 URL",
-    "Finished?": "專案完成狀態"
+    "Progress": "專案完成狀態"
   }
 }
 ```
