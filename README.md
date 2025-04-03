@@ -1,73 +1,69 @@
-# Flutter Projects
+# Flutter 專案
 
-**Flutter Projects** is a Flutter app that fetches and displays a list of projects from a JSON API. This app showcases project details including the language used, Git repository links, and project completion status.
+**Flutter 專案** 是一個 Flutter 應用程式，會從 JSON API 抓取並顯示專案列表。此應用程式展示專案的詳細資訊，包括使用的程式語言、Git 儲存庫連結以及專案完成狀態。
 
-## Features
+## 功能
 
-- Fetches project data from a remote JSON API.
-- Displays project information in a responsive and user-friendly interface.
-- Each project card includes the project's name, language, Git address, and completion status.
+- 從遠端 JSON API 抓取專案資料。
+- 在響應式且使用者友善的介面中顯示專案資訊。
+- 每個專案卡片都包含專案名稱、語言、Git 地址以及完成狀態。
 
-## Installation
+## 安裝
 
-To run the Projects Loader app locally, follow these steps:
+要在本地端執行 Projects Loader 應用程式，請依照下列步驟操作：
 
-### Prerequisites
+### 前置需求
 
-- [Flutter](https://flutter.dev/docs/get-started/install) installed on your machine.
-- [Dart](https://dart.dev/get-dart) (comes with Flutter SDK).
+- 已在您的機器上安裝 [Flutter](https://flutter.dev/docs/get-started/install)。
+- [Dart](https://dart.dev/get-dart)（隨 Flutter SDK 一同安裝）。
 
-### Setup(Linux)
+### 設定 (Linux)
 
-1. **Clone the repository:**
+1. **複製儲存庫：**
 
    ```sh
    git clone https://github.com/CodeFoxy-Github/Flutter-Projects
    cd Flutter-Projects
    ```
 
-2. **Install dependencies:**
+2. **安裝相依套件：**
 
    ```sh
    if cd flutter; then git pull && cd .. ; else git clone https://github.com/flutter/flutter.git; fi && ls && flutter/bin/flutter doctor && flutter/bin/flutter clean && flutter/bin/flutter config --enable-web
    ```
 
-3. **Run the app:**
+3. **執行應用程式：**
 
    ```sh
    flutter/bin/flutter build web --release
    ```
 
-## Configuration
+## 設定檔
 
-The app fetches project data from the following URL:
-
-```plaintext
-https://getpantry.cloud/apiv1/pantry/d13d90f6-9c51-487c-9ebb-8b788917748d/basket/Projects
-```
-getpantry.cloud!
-**(tho its slow asf)**
-You can modify the URL in the `lib/main.dart` file if you want to use a different API endpoint.
-And the json format is:
-The JSON data is organized as follows:
+該應用程式會從以下 URL 抓取專案資料：
+`https://getpantry.cloud/apiv1/pantry/dd9b1690-a702-4a1f-908a-9fb8d77614aa/basket/patha`
+如果您想使用不同的 API 端點，您可以在 `lib/main.dart` 檔案中修改此 URL。  
+JSON 格式如下：  
+JSON 資料的結構如下所示：
 
 ```json
 {
   "Project Name": {
-    "Language": "Programming Language(s) used",
-    "Git Address": "URL to the project's Git repository",
-    "Finished?": "Status of project completion"
+    "Language": "使用的程式語言",
+    "Git Address": "專案 Git 儲存庫的 URL",
+    "Finished?": "專案完成狀態"
   }
 }
 ```
-## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions, please open an issue or submit a pull request.
+## 貢獻
 
-## License
+歡迎貢獻！如果您發現任何問題或有建議，請開啟 issue 或提交 pull request。
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 授權
 
-## Acknowledgements
+本專案採用 MIT 授權條款 - 詳情請參閱 [LICENSE](LICENSE) 檔案。
 
-- [Flutter](https://flutter.dev) for building the cross-platform app.
+## 感謝
+
+- 感謝 [Flutter](https://flutter.dev) 建構跨平台應用程式。
