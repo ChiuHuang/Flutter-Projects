@@ -60,9 +60,6 @@ JSON 資料的結構如下所示：
 
 歡迎貢獻！如果您發現任何問題或有建議，請開啟 issue 或提交 pull request。
 
-## 授權
-
-本專案採用 MIT 授權條款 - 詳情請參閱 [LICENSE](LICENSE) 檔案。
 
 ## 感謝
 
