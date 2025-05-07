@@ -22,7 +22,7 @@
 1. **複製儲存庫：**
 
    ```sh
-   git clone https://github.com/ChQiuHuang/Flutter-Projects
+   git clone https://github.com/ChiuHuang/Flutter-Projects
    cd Flutter-Projects
    ```
 
