@@ -41,7 +41,7 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
 
   Future<Map<String, dynamic>> fetchProjects() async {
     final response = await http.get(Uri.parse(
-        'https://chiuhuang.dev/list.json'));
+        'https://www.chiuhuang.dev/list.json'));
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {
