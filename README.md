@@ -42,7 +42,7 @@
 
 該應用程式會從以下 URL 抓取專案資料：
 <br>
-`https://getpantry.cloud/apiv1/pantry/dd9b1690-a702-4a1f-908a-9fb8d77614aa/basket/patha`
+(https://projects.chiuhuang.dev/list.json`
 <br>
 如果您想使用不同的 API 端點，您可以在 `lib/main.dart` 檔案中修改此 URL。  
 JSON 格式如下：  
