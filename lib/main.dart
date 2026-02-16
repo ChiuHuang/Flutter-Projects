@@ -110,7 +110,6 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
               },
             ),
           ),
-          ),
         ],
       ),
     );
