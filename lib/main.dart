@@ -41,7 +41,7 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
 
   Future<Map<String, dynamic>> fetchProjects() async {
     final response = await http.get(Uri.parse(
-        'https://getpantry.cloud/apiv1/pantry/dd9b1690-a702-4a1f-908a-9fb8d77614aa/basket/patha'));
+        'https://projects.chiuhuang.dev/list.json'));
     if (response.statusCode == 200) {
       return json.decode(response.body);
     } else {
@@ -110,26 +110,6 @@ class _MyProjectsPageState extends State<MyProjectsPage> {
               },
             ),
           ),
-          Container(
-            padding: const EdgeInsets.all(16.0),
-            margin: const EdgeInsets.all(8.0),
-            decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.primaryContainer,
-              borderRadius: BorderRadius.circular(16.0),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(Icons.info, color: Theme.of(context).colorScheme.onPrimaryContainer),
-                const SizedBox(width: 8.0),
-                Text(
-                  'This Project is made possible by Vercel and Pantry',
-                  style: TextStyle(
-                    color: Theme.of(context).colorScheme.onPrimaryContainer,
-                  ),
-                ),
-              ],
-            ),
           ),
         ],
       ),
